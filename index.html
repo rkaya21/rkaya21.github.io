@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="eg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recep Enes KAYA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Recep Enes Kaya</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Hakkımda</a></li>
+          <li><a href="#experience">Deneyimlerim</a></li>
+          <li><a href="#projects">Projelerim</a></li>
+          <li><a href="#contact">İletişim</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Recep Enes Kaya</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Hakkımda</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Deneyimlerim</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projelerim</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">İletişim</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Recep Enes Kaya profil resmi" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Merhaba, Ben</p>
+        <h1 class="title">RECEP ENES KAYA</h1>
+        <p class="section__text__p2">Back-end Developer olmayı hedefliyorum.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            CV indir
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            İletişim Bilgileri
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn profilim"
+            class="icon"
+            onclick="location.href='https:www.linkedin.com/in/recep-enes-kaya-a89208231'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Github profilim"
+            class="icon"
+            onclick="location.href='https:github.com/rkaya21'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Daha Fazlasını Keşfedin</p>
+      <h1 class="title">Hakkımda</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profil resmi"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Deneyim simgesi"
+                class="icon"
+              />
+              <h3>Deneyimlerim</h3>
+              <p>C, C#, JavaScript <br />Orta Seviye</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Eğitim simgesi"
+                class="icon"
+              />
+              <h3>Eğitim</h3>
+              <p>Pamukkale Üniversitesi<br />Yönetim Bilişim Sistemleri</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Pamukkale Üniversitesi Yönetim Bilişim Sistemleri öğrencisiyim. Hazırlık eğitimimde B1 seviyesini başarıyla tamamladım, ancak istenen seviyede bitiremedim. Şu anda TOEFL sınavını geçmek için çalışmalarıma devam etmekteyim. Okul müfredatının yanı sıra, kendi gayretlerimle HTML, CSS ve Javascript'i öğrendim ve şu anda Node.js üzerinde çalışıyorum. Zamanla, kapsamlı bir backend geliştirici olmak için yol haritamı çizip, takip etmekteyim. Kendimi sürekli geliştirmeye ve bu alandaki bilgi birikimimi artırmaya çalışıyorum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ok simgesi"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">-----</p>
+      <h1 class="title">Deneyimler</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Deneyimi</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Deneyim simgesi"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Tecrübeli</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Deneyim simgesi"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Tecrübeli</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Deneyim simgesi"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Temel</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Deneyim simgesi"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Orta Seviye</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Deneyimi</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Deneyim simgesi"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Temel</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Deneyim simgesi"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Temel</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ok simgesi"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Takip Edin</p>
+      <h1 class="title">Projelerim</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Proje 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">BESFIT PROJEM</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:github.com/rkaya21'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:www.youtube.com/watch?v=FlvW2fSlpJ0'"
+              >
+                Canlı İzle
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Proje 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Proje Yüklenecek</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:github.com/rkaya21'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:github.com/rkaya21'"
+              >
+                Canlı İzle
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Proje 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Proje Yüklenecek</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:github.com/rkaya21'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:github.com/rkaya21'"
+              >
+                Canlı İzle
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ok simgesi"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Bana Ulaş</p>
+      <h1 class="title">İletişime Geç</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email simgesi"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">recepenskaya@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn simgesi"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/recep-enes-kaya-a89208231/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#experience">Deneyimlerim</a></li>
+            <li><a href="#projects">Projelerim</a></li>
+            <li><a href="#contact">İletişim</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Tüm Hakları Saklıdır &#169; 2023 Recep Enes Kaya.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
